@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+.top{
+    background-image: url("IMGS/abc.jpg");
+    width: 768px;
+    height: 117px;
+    position: relative;
+}
+.menu {
+    float: left;
+    width: 768px;
+    height: 70px;
+    text-align: right;
+    position: relative;
+    left:250px ;
+}
+.menu li{
+    float: left;
+    width: auto;
+    height: 70px;
+    list-style: none;
+    color: rgba(248,247,52,0.82);
+    text-align: left;
+    padding: 20px 5px 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.top .title{
+    float: left;
+    width: 768px;
+    height: 47px;
+    text-align: center;
+    position: relative;
+    left: 250px;
+}
+.title h2{
+    float: left;
+    width: 200px;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 10px 2px;
+}
+section{
+    box-sizing: border-box;
+    float: left;
+}
+.container{
+    float: left;
+    width: calc(768*70%);
+}
+.aside{
+    float: left;
+    width: calc(768*30%);
+}
+.box{
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
