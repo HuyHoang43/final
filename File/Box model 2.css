@@ -1,0 +1,81 @@
+#box0{
+    float: left;
+    width: 500px;
+    height: 500px;
+    border: 1px solid red;
+    /*position: relative;*/
+}
+#box1 {
+    float: left;
+    width: 500px;
+    height: 500px;
+    background-color: #7fffd4;
+    position: relative;
+    margin-left: 100px;
+    box-shadow: 5px 5px 10px red;
+}
+#box2 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-color: #ffa500;
+    border-radius: 100%;
+    /*position: absolute; /* tìm tới relative gần nhất, nếu k sẽ lấy theo body*/
+    position: fixed;/*đinh vị theo màn hình của người dùng */
+    top: 50px;
+    right: 100px;
+    z-index: 10;
+}
+#box3 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+    border-radius: 100%;
+    position: fixed;
+    top: 250px;
+    right: 100px;
+    z-index: 11; /* z index lớn hơn thì sẽ nổi lên trên*/
+    animation-name: trafficlight;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+@keyframes trafficlight {
+    0%{
+        background-color: red;
+    }
+    33.33%{
+        background-color: green;
+    }
+    66.66%{
+        background-color: yellow;
+    }
+
+}
+@keyframes changecolor { /* chay từ a tới b */
+    from{
+        background-color: green;
+        width: 100px;
+        height: 100px;
+    }
+    to{
+        background-color: purple;
+        width: 50px;
+        height: 50px;
+    }
+
+}
+#box1 div{
+   /* background-color: #ffa500;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*transform: translate(100px); thay đổi góc nhìn của người dùng với phần tử*/
+    transform: rotate(90deg);
+    transition: all 300ms; /* làm cho các phần tử chậm hơn */
+}
+#box1 div:hover { /* trạng thái khi người dùng đưa chuột vào*/
+    transform: scale(1.15);
+    background-color: black;
+}

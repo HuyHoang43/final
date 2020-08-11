@@ -1,0 +1,27 @@
+h2{
+    line-height: 0.5;
+    word-spacing: 0;
+    font-size: 20px;
+    text-align: justify;
+    text-indent: 80px;
+}
+p{
+    text-align: justify;
+    text-indent: 80px;
+    line-height: 0.5;
+}
+h3{
+    text-align: justify;
+    text-indent: 80px;
+    word-spacing: 20px;
+}
+h4{
+    font-weight: normal;
+    text-align: center;
+
+}
+ul{
+    text-align: justify;
+    text-indent: 80px;
+    line-height: 1;
+}

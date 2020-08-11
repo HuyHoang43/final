@@ -1,0 +1,83 @@
+*{/* * định nghĩa cho cả trang*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("../IMGS/isolated-brown-color-cup-in-retro-style-background-coffee-shop-backdrop-HYK941.jpg");
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.5;
+    font-weight: 400;
+}
+#page{
+    width: 1200px;
+    margin: 100px auto;
+    border-radius: 5px;
+}
+
+#d1{
+    background-color: #bac3cc;
+    float: left;
+    width: 1100px;
+    padding: 50px 0 40px;
+    margin-left: 220px;
+    text-align: center;
+}
+#d1  h1{
+    text-transform: uppercase;
+    font-size: 40px;
+}
+#d1  h3{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+}
+#d4{
+    background-color: #ffffff;
+    float: left;
+    width: 1100px;
+    margin-left: 220px;
+}
+#d2 {
+    float: left;
+    background-color: #e7e7e7;
+    width: 280px;
+    height: 900px;
+    margin-top: -150px;
+    margin-left: 30px;
+    padding: 35px;
+    font-size: 14px;
+}
+#d2 #avatar{
+    border-radius: 100%;
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+}
+#avatar img {
+    width: 100%;
+    height: auto;
+}
+#d2 p, #d3 p{
+    font-size: 13px;
+    margin: 0px 0;
+}
+#d2 h2, #d3 h2{
+    font-size: 28px;
+    font-weight: 400;
+}
+#d2 hr,#d3 hr{
+    border: 1px solid black;
+    margin-top: 15px;
+}
+#d3{
+    width: calc(100% - 320px);
+    float: right;
+    padding: 30px;
+}
+#d3 h4{
+    font-weight: 200;
+}
