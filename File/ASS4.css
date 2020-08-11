@@ -3,121 +3,805 @@
     padding: 0;
     box-sizing: border-box;
 }
-#year{
-    position: relative;
-    top: -10px;
-    left: 30px;
+body{
+    background-color: gainsboro;
 }
-h3{
-    font-size: 30px;
-    padding-top: -10px;
-    font-family: "Sans JP", sans-serif;
-}
-#icon{
-    position: fixed;
-    top: 20px;
-    right: 40px;
-    font-size: 30px;
-}
-.box{
+#box0{
     box-sizing: border-box;
-    border: 2px solid #eeeeee;
-    background-color: #eeeeee;
-    float: left;
-    width: 1400px;
-    height: 200px;
-    margin-left: 60px;
-    overflow: hidden;
+    width: 1000px;
+    height: 1000px;
+    margin: 48px 190px;
+    background-color: white;
 }
-.avatar{
+#year{
     float: left;
-    width: 200px;
-
+    font-family: 'Arial', sans-serif;
+    font-size: 26px;
+    font-weight: 520;
+    width: 500px;
+    height: 50px;
+    padding: 10px 0px 0 60px;
 }
-#p1{
+#calendar{
     float: left;
-    width: 25%;
-    font-family:'Roboto', sans-serif;
-}
-#rectangle1{
-    float: left;
-    width: 100px;
-    height: 200px;
-    font-family:'Roboto', sans-serif;
+    font-size: 22px;
+    width: 500px;
+    height: 50px;
     text-align: right;
-    position: relative;
-    left: 650px;
-    top:30px;
+    padding: 10px 80px 0 0;
 }
-.text1{
+#box1{
     float: left;
-    font-size: 16px;
-    width: 100px;
-    text-align: center;
-    height: 30px;
+    box-sizing: border-box;
+    background-color: white;
+    width: 830px;
+    height: 150px;
+    margin: 15px 80px;
+    border: 1px solid gainsboro;
+    box-shadow: gainsboro;
 }
-.text2{
+#box1 #part1{
+    float: left;
+    box-sizing: border-box;
+    width: 600px;
+    height: 150px;
+}
+#box1 #part2{
+    box-sizing: border-box;
+    width: 220px;
+    height: 120px;
+    float: left;
+    padding: 20px 50px 0 0;
+    position: relative;
+    overflow: hidden;
+    right: -9px;
+}
+#img1{
+    float: left;
+    width:145px;
+    height: 150px;
+}
+#part1 #img1 img{
+    width: 145px;
+    height: 150px;
+}
+#part1 #content1{
+    float: left;
+    width: 430px;
+    height: 110px;
+    margin: 10px 0 0 12px;
+    padding: 4px;
+}
+#content1 h2{
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: #ffa548;
+    padding: 4px;
+}
+#content1 #place1{
     float: left;
     width: 100%;
-    height: 50px;
+    height: 22px;
 }
-.currency {
+#place1 p{
     float: left;
-    width: 30px;
-    height: 40px;
+    font-size: 12px;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: bold;
+    padding: 4px;
+    width: 150px;
+}
+#place1 #location1{
+    font-size: 10px;
+    font-family:'Arial', sans-serif;
+    font-weight: normal;
+    width: 60px;
+}
+#place1 #a{
+    box-sizing: border-box;
+    border-left: 2px solid #ffa548;
+    margin-left: 5px;
+    padding: 4px 4px 4px 8px;
+    color: #ffa548;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: 'Merriweather',sans-serif;
+    width: 150px;
+}
+#readmore1{
+    float: left;
+    font-family: 'Arial', sans-serif;
+    padding: 4px;
+    font-size: 12px;
+    height: 24px;
+    width: 100%;
+}
+#date1{
+    float: left;
+    font-family: 'Arial', sans-serif;
+    padding: 4px;
+    font-size: 12px;
+    width: 100%;
+    height: 24px;
+}
+#part2 #from1{
+    box-sizing: border-box;
+    float: left;
+    width: 84px;
+    height: 61px;
+    padding: 4px 15px 8px 4px;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    right: -80px;
+}
+#from1 p{
+    float: left;
+    height: 16px;
+    font-size: 12px;
+    width: 64px;
     text-align: center;
-    padding-top: 9px;
-    font-size: 14px;
 }
-.oldprice{
+#price1 {
+    font-size: 12px;
     float: left;
-    width: 30px;
-    height: 40px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    width: 64px;
+    height: 30px;
+    position: relative;
+}
+#price1 #dollar1{
+    float: left;
+    font-size: 11px;
+    width: 15px;
+    height: 30px;
+    padding-top: 13px;
+}
+#price1 #oldprice1{
+    float: left;
     text-decoration: line-through;
-    text-align: center;
-    padding-top: 10px;
+    font-size: 12px;
+    width: 17px;
+    height: 30px;
+    padding-top: 13px;
 }
-.newprice{
+#price1 #newprice1{
     float: left;
-    width: 40px;
-    height: 40px;
-    text-align: right;
-    font-family: 'Roboto', sans-serif;
     font-size: 27px;
     font-weight: bold;
+    width: 30px;
+    height: 30px;
 }
-#text3{
+#discount1{
+    box-sizing: border-box;
+    width: 130px;
+    height: 117px;
+    color: white;
+    background-color: #ff0000;
+    font-weight: bold;
+    font-size: 18px;
+    transform: rotate(45deg);
+    padding: 85px 35px 10px ;
+    position: absolute;
+    bottom: 61px;
+    right: -77px;
+    font-family: 'Arial', sans-serif;
+}
+#view1{
     float: left;
-    border: 1px solid #ffa548;
+    box-sizing: border-box;
+    background-color: #ffa548;
     width: 79px;
     height: 32px;
-    text-align: center;
-    background-color: #ffa548;
-    color: white;
-    line-height: 20px;
-    font-size: 16px;
     text-transform: uppercase;
+    padding: 8px 4px 4px;
+    color: white;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
     font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    border-radius: 5px;
-    padding-top: 5px;
+    border-radius: 4px;
     position: relative;
-    left: 15px;
- }
-#triangle1{
-    width: 150px;
+    top: 60px;
+
+}
+
+
+#box2{
+    float: left;
+    box-sizing: border-box;
+    background-color: white;
+    width: 830px;
     height: 150px;
+    margin: 15px 80px;
+    border: 1px solid gainsboro;
+    box-shadow: gainsboro;
+}
+#box2 #part3{
+    float: left;
+    box-sizing: border-box;
+    width: 600px;
+    height: 150px;
+}
+#box2 #part4{
+    box-sizing: border-box;
+    width: 220px;
+    height: 120px;
+    float: left;
+    padding: 20px 50px 0 0;
     position: relative;
-    bottom: 75px;
-    right: -1320px;
+    overflow: hidden;
+    right: -9px;
+}#img2{
+    float: left;
+    width:145px;
+    height: 150px;
+}
+#part3 #img2 img{
+    width: 145px;
+    height: 150px;
+}
+#part3 #content2{
+    float: left;
+    width: 430px;
+    height: 110px;
+    margin: 10px 0 0 12px;
+    padding: 4px;
+}
+#content2 h2{
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: #ff5936;
+    padding: 4px;
+}
+#content2 #place2{
+    float: left;
+    width: 100%;
+    height: 22px;
+}
+#place2 p{
+    float: left;
+    font-size: 12px;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: bold;
+    padding: 4px;
+}
+#place2 #location2{
+    font-size: 10px;
+    font-family:'Arial', sans-serif;
+    font-weight: normal;
+}
+#place2 #b{
+    box-sizing: border-box;
+    border-left: 2px solid #ff5936;
+    margin-left: 5px;
+    padding: 4px 4px 4px 8px;
+    color: #ff5936;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: 'Merriweather',sans-serif;
+}
+#readmore2{
+    float: left;
+    font-family: 'Arial', sans-serif;
+    padding: 4px;
+    font-size: 12px;
+    height: 24px;
+    width: 100%;
+}
+#date2{
+    float: left;
+    font-family: 'Arial', sans-serif;
+    padding: 4px;
+    font-size: 12px;
+    width: 100%;
+    height: 24px;
+}
+#part4 #from2{
+    box-sizing: border-box;
+    float: left;
+    width: 84px;
+    height: 61px;
+    padding: 4px 15px 8px 4px;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    right: -80px;
+}
+#from2 p{
+    float: left;
+    height: 16px;
+    font-size: 12px;
+    width: 64px;
+    text-align: center;
+}
+#price2 {
+    font-size: 12px;
+    float: left;
+    width: 64px;
+    height: 30px;
+    position: relative;
+}
+#price2 #dollar2{
+    float: left;
+    font-size: 27px;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+}
+#price2 #newprice2{
+    float: left;
+    font-size: 27px;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+}
+#view2{
+    float: left;
+    box-sizing: border-box;
+    background-color: #ff5936;
+    width: 79px;
+    height: 32px;
+    text-transform: uppercase;
+    padding: 8px 4px 4px;
+    color: white;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    border-radius: 4px;
+    position: relative;
+    top: 60px;
+}
+
+
+
+#box3{
+    float: left;
+    box-sizing: border-box;
+    background-color: white;
+    width: 830px;
+    height: 150px;
+    margin: 15px 80px;
+    border: 1px solid gainsboro;
+    box-shadow: gainsboro;
+}
+#box3 #part5{
+    float: left;
+    box-sizing: border-box;
+    width: 600px;
+    height: 150px;
+}
+#box3 #part6{
+    box-sizing: border-box;
+    width: 220px;
+    height: 120px;
+    float: left;
+    padding: 20px 50px 0 0;
+    position: relative;
+    overflow: hidden;
+    right: -9px;
+}
+#img3{
+    float: left;
+    width:145px;
+    height: 150px;
+}
+#part5 #img3 img{
+    width: 145px;
+    height: 150px;
+}
+#part5 #content3{
+    float: left;
+    width: 430px;
+    height: 110px;
+    margin: 10px 0 0 12px;
+    padding: 4px;
+}
+#content3 h2{
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: #6aa84f;
+    padding: 4px;
+}
+#content3 #place3{
+    float: left;
+    width: 100%;
+    height: 22px;
+}
+#place3 p{
+    float: left;
+    font-size: 12px;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: bold;
+    padding: 4px;
+    width: 150px;
+}
+#place3 #location3{
+    font-size: 10px;
+    font-family:'Arial', sans-serif;
+    font-weight: normal;
+    width: 60px;
+}
+#place3 #c{
+    box-sizing: border-box;
+    border-left: 2px solid #6aa84f;
+    margin-left: 5px;
+    padding: 4px 4px 4px 8px;
+    color: #6aa84f;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: 'Merriweather',sans-serif;
+    width: 150px;
+}
+#readmore3{
+    float: left;
+    font-family: 'Arial', sans-serif;
+    padding: 4px;
+    font-size: 12px;
+    height: 24px;
+    width: 100%;
+}
+#date3{
+    float: left;
+    font-family: 'Arial', sans-serif;
+    padding: 4px;
+    font-size: 12px;
+    width: 100%;
+    height: 24px;
+}
+#part6 #from3{
+    box-sizing: border-box;
+    float: left;
+    width: 84px;
+    height: 61px;
+    padding: 4px 15px 8px 4px;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    right: -80px;
+}
+#from3 p{
+    float: left;
+    height: 16px;
+    font-size: 12px;
+    width: 64px;
+    text-align: center;
+}
+#price3 {
+    font-size: 12px;
+    float: left;
+    width: 64px;
+    height: 30px;
+    position: relative;
+}
+#price3 #dollar3{
+    float: left;
+    font-size: 11px;
+    width: 15px;
+    height: 30px;
+    padding-top: 13px;
+}
+#price3 #oldprice3{
+    float: left;
+    text-decoration: line-through;
+    font-size: 12px;
+    width: 17px;
+    height: 30px;
+    padding-top: 13px;
+}
+#price3 #newprice3{
+    float: left;
+    font-size: 27px;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+}
+#discount2{
+    box-sizing: border-box;
+    width: 130px;
+    height: 117px;
+    color: white;
+    background-color: #ff0000;
+    font-weight: bold;
+    font-size: 18px;
     transform: rotate(45deg);
-    background-color: #ff253a;
+    padding: 85px 35px 10px ;
+    position: absolute;
+    bottom: 61px;
+    right: -77px;
+    font-family: 'Arial', sans-serif;
 }
-h4{
+#view3{
+    float: left;
+    box-sizing: border-box;
+    background-color: #6aa84f;
+    width: 79px;
+    height: 32px;
+    text-transform: uppercase;
+    padding: 8px 4px 4px;
+    color: white;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    border-radius: 4px;
     position: relative;
-    bottom: 90px;
-    left: 50px;
-    font-size: 22px;
+    top: 60px;
 }
+
+
+
+
+#box4{
+    float: left;
+    box-sizing: border-box;
+    background-color: white;
+    width: 830px;
+    height: 150px;
+    margin: 15px 80px;
+    border: 1px solid gainsboro;
+    box-shadow: gainsboro;
+}
+#box4 #part7{
+    float: left;
+    box-sizing: border-box;
+    width: 600px;
+    height: 150px;
+}
+#box4 #part8{
+    box-sizing: border-box;
+    width: 220px;
+    height: 120px;
+    float: left;
+    padding: 20px 50px 0 0;
+    position: relative;
+    overflow: hidden;
+    right: -9px;
+}
+#img4{
+     float: left;
+     width:145px;
+     height: 150px;
+ }
+#part7 #img4 img{
+    width: 145px;
+    height: 150px;
+}
+#part7 #content4{
+    float: left;
+    width: 430px;
+    height: 110px;
+    margin: 10px 0 0 12px;
+    padding: 4px;
+}
+#content4 h2{
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: #ffa548;
+    padding: 4px;
+}
+#content4 #place4{
+    float: left;
+    width: 100%;
+    height: 22px;
+}
+#place4 p{
+    float: left;
+    font-size: 12px;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: bold;
+    padding: 4px;
+}
+#place4 #location4{
+    font-size: 10px;
+    font-family:'Arial', sans-serif;
+    font-weight: normal;
+}
+#place4 #d{
+    box-sizing: border-box;
+    border-left: 2px solid #ffa548;
+    margin-left: 5px;
+    padding: 4px 4px 4px 8px;
+    color: #ffa548;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: 'Merriweather',sans-serif;
+}
+#readmore4{
+    float: left;
+    font-family: 'Arial', sans-serif;
+    padding: 4px;
+    font-size: 12px;
+    height: 24px;
+    width: 100%;
+}
+#date4{
+    float: left;
+    font-family: 'Arial', sans-serif;
+    padding: 4px;
+    font-size: 12px;
+    width: 100%;
+    height: 24px;
+}
+#part8 #from4{
+    box-sizing: border-box;
+    float: left;
+    width: 84px;
+    height: 61px;
+    padding: 4px 15px 8px 4px;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    right: -80px;
+}
+#from4 p{
+    float: left;
+    height: 16px;
+    font-size: 12px;
+    width: 64px;
+    text-align: center;
+}
+#price4 {
+    font-size: 12px;
+    float: left;
+    width: 64px;
+    height: 30px;
+    position: relative;
+}
+#price4 #dollar4{
+    float: left;
+    font-size: 27px;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+}
+#price4 #newprice4{
+    float: left;
+    font-size: 27px;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+}
+#view4{
+    float: left;
+    box-sizing: border-box;
+    background-color: #ffa548;
+    width: 79px;
+    height: 32px;
+    text-transform: uppercase;
+    padding: 8px 4px 4px;
+    color: white;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    border-radius: 4px;
+    position: relative;
+    top: 60px;
+}
+
+
+
+#box5{
+    float: left;
+    box-sizing: border-box;
+    background-color: white;
+    width: 830px;
+    height: 150px;
+    margin: 15px 80px;
+    border: 1px solid gainsboro;
+    box-shadow: gainsboro;
+}
+#box5 #part9{
+    float: left;
+    box-sizing: border-box;
+    width: 600px;
+    height: 150px;
+}
+#box5 #part10{
+    box-sizing: border-box;
+    width: 220px;
+    height: 120px;
+    float: left;
+    padding: 20px 50px 0 0;
+    position: relative;
+    overflow: hidden;
+    right: -9px;
+}
+#img5{
+    float: left;
+    width:145px;
+    height: 150px;
+}
+#part9 #img5 img{
+    width: 145px;
+    height: 150px;
+}
+#part9 #content5{
+    float: left;
+    width: 430px;
+    height: 110px;
+    margin: 10px 0 0 12px;
+    padding: 4px;
+}
+#content5 h2{
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: #ffa548;
+    padding: 4px;
+}
+#content5 #place5{
+    float: left;
+    width: 100%;
+    height: 22px;
+}
+#place5 p{
+    float: left;
+    font-size: 12px;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: bold;
+    padding: 4px;
+}
+#place5 #location5{
+    font-size: 10px;
+    font-family:'Arial', sans-serif;
+    font-weight: normal;
+}
+#place5 #e{
+    box-sizing: border-box;
+    border-left: 2px solid #ffa548;
+    margin-left: 5px;
+    padding: 4px 4px 4px 8px;
+    color: #ffa548;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: 'Merriweather',sans-serif;
+}
+#readmore5{
+    float: left;
+    font-family: 'Arial', sans-serif;
+    padding: 4px;
+    font-size: 12px;
+    height: 24px;
+    width: 100%;
+}
+#date5{
+    float: left;
+    font-family: 'Arial', sans-serif;
+    padding: 4px;
+    font-size: 12px;
+    width: 100%;
+    height: 24px;
+}
+#part10 #from5{
+    box-sizing: border-box;
+    float: left;
+    width: 130px;
+    height: 40px;
+    background-color: #ce0000;
+    padding: 5px 15px;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    right: -35px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+}
+#view5{
+    float: left;
+    box-sizing: border-box;
+    background-color: #ffa548;
+    width: 79px;
+    height: 32px;
+    text-transform: uppercase;
+    padding: 8px 4px 4px;
+    color: white;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    border-radius: 4px;
+    position: relative;
+    top: 15px;
+    right: -85px;
+}
+
+
+
+
+
+
+
