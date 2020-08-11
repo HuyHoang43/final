@@ -17,5 +17,16 @@ h3{
     color: hotpink;
 }
 hr{
-    color: hotpink;
+    border: 1px solid hotpink;
+    box-sizing: border-box;
+    background-color: hotpink;
+    width: 100%;
 }
+figure{
+    float: left;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+
