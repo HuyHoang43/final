@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Labs7</title>
+    <link rel="stylesheet" type="text/css" href="File/Labs7.css">
+    <link rel="stylesheet" href="Library/icon/css/all.css">
+</head>
+<body>
+<div>
+    <h2>Responsive Checkout Form</h2>
+</div>
+<div class="container">
+    <div id="cont1">
+        <h3>Billing Address</h3>
+        <form method="post">
+            <label for="name"> Full Name</label>
+            <input id="name" type="text" name="fullname">
+            <label for="email"> Email</label>
+            <input id="email" type="email" name="email">
+            <label for="adress"> Address</label>
+            <input id="adress" type="text" name="address">
+            <label for="city"> City </label>
+            <input id="city" type="text" name="city">
+            <div id="d1">
+                <label for="state">State</label>
+                <input id="state" type="text" name="state">
+            </div>
+            <div id="d2">
+                <label for="zip">Zip </label>
+                <input id="zip" type="number" name="zip">
+            </div>
+            <label><input type="checkbox" name="rule"/>Shipping address same as billing</label>
+        </form>
+    </div>
+    <div id="cont2">
+        <h3>Payments</h3>
+        <form method="post">
+            <div id="d5">
+                <p>Accepted Card</p>
+            </div>
+            <div id="d6">
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-paypal"></i>
+                <i class="fas fa-credit-card"></i>
+            </div>
+            <div id="d7">
+                <label for="nameoncard"> Name on Card</label>
+                <input id="nameoncard" type="text" name="cardname">
+                <label for="creditcardnumber"> Credit card number</label>
+                <input id="creditcardnumber" type="number"  name="number">
+                <label for="expmonth"> Exp month</label>
+                <input id="expmonth" type="date" name="date">
+            </div>
+            <div id="d3">
+                <label for="expyear"> Exp Year</label>
+                <input id="expyear" type="number" pattern="[0-9]{4}" name="year">
+            </div>
+            <div id="d4">
+                <label for="cvv"> CVV</label>
+                <input id="cvv" type="number" name="cvv">
+            </div>
+        </form>
+    </div>
+    <div class="input-group">
+        <input type="submit"value="Continue to checkout">
+    </div>
+</div>
+</body>
+</html>

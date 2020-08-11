@@ -1,0 +1,21 @@
+h2{
+    font-family: Arial;
+    text-align: right;
+}
+h4{
+    font-family: Arial;
+    text-align: right;
+    text-indent: -40cm;
+    line-height: 0.5;
+    font-weight: normal;
+
+}
+h3{
+    font-family: Arial ;
+    line-height: 0.5;
+    text-decoration: underline hotpink;
+    color: hotpink;
+}
+hr{
+    color: hotpink;
+}
