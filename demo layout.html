@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Demo Layout</title>
-    <link rel="stylesheet" type="text/css" href="demo%20layout.css">
+    <link rel="stylesheet" type="text/css" href="File/demo%20layout.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet " href="Library/icon/css/all.css">
 </head>
 <body>
-    <header class="section">
+    <header class="header">
     <div class="container">
         <div class="logo">
             <a href="#">Accio.</a>
@@ -16,8 +17,9 @@
             <ul class="menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Posts</a></li>
-                <li><a href="#">Pages</li>
-                <li><a href="#">About</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Archives</a></li>
+                <li><a href="#">Fullwidth</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
@@ -27,33 +29,50 @@
     <div class="container">
         <div class="content">
             <article class="tweet">
-                <div class="tweet-content">>
-                    <h2>Only one thing is simple for God: To find any sense in any copyright law on the planet</h2>
+                <div class="tweet-content">
+                    <h2> Only one thing is simple for God: To find any sense in any copyright law on the planet</h2>
                     <p>Mark Twain</p>
                 </div>
             </article>
             <article class="post">
                 <div class="post-content">
-                    <h2> Adjustment Gladiator</h2>
-                    <p> Levis Hawton</p>
-                    <p>A paragraph is a piece of writing that consist of a series of sentences</p>
+                    <h2> Awesome Gallery Post Slider</h2>
+                    <div class="small">
+                        <p class="comment"><i class="far fa-comment"></i>0</p>
+                        <p class="calendar"><i class="far fa-calendar"></i>November 3, 2013</p>
+                        <p class="icon"><i class="far fa-image"></i>Gallery</p>
+                    </div>
+                    <p class="text">"A vaccine against coronavirus has been registered for the first time in the world this morning," Putin said on state TV. "I know that it works quite effectively, it forms a stable immunity."</p>
+                    <p class="readmore">Read more</p>
+                </div>
+            </article>
+            <article class="post">
+                <div class="post-content">
+                    <h2> Standard Post Without Image</h2>
+                    <div class="small">
+                        <p class="comment"><i class="far fa-comment"></i>0</p>
+                        <p class="calendar"><i class="far fa-calendar"></i>November 4, 2013</p>
+                        <p class="icon"><i class="far fa-file"></i>Standard</p>
+                    </div>
+                    <p class="text">The claim of victory by Putin in the global push to make an effective vaccine against Covid-19 comes amid suggestions that Russia has cut essential corners in its development.</p>
+                    <p class="readmore">Read more</p>
                 </div>
             </article>
         </div>
         <aside class="sidebar">
             <div class="recent-post">
                 <ul class="list">
-                    <h2>recent post</h2>
-                    <li>A quote by Mark Twain</li>
-                    <li>Awesome Gallery Post Slider</li>
-                    <li>Standard Post Without Image</li>
-                    <li>Southside House Collective</li>
-                    <li>The Lentiment (Self Hosted Audio)</li>
+                    <h3><i class="far fa-file"></i>Recent posts</h3>
+                    <li><img src="IMGS/MarkT.JPG"><p>A quote by Mark Twain</p></li>
+                    <li><img src="IMGS/Awe.jpg"><p> Awesome Gallery Post Slider</p></li>
+                    <li><img src="IMGS/unnamed.png"><p> Standard Post Without Image</p></li>
+                    <li><img src="IMGS/south.png"><p> Southside House Collective</p></li>
+                    <li><img src="IMGS/radio.jpg"><p>The Lentiment (Self Hosted Audio)</p></li>
                 </ul>
             </div>
-            <div class="categories">
+            <div class="recent-post">
                 <ul class="category">
-                    <h2>Categories</h2>
+                    <h3><i class="fas fa-scroll"></i>Categories</h3>
                     <li>Aside(1)</li>
                     <li>Audio(2)</li>
                     <li>Gallery(2)</li>
